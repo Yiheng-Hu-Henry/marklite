@@ -1,0 +1,33 @@
+{
+  "name": "marklite",
+  "version": "0.1.0",
+  "description": "零依赖的 Markdown 静态站点生成器：自写解析器、front-matter、增量构建、开箱即用的开发服务器",
+  "type": "module",
+  "bin": {
+    "marklite": "bin/marklite.js"
+  },
+  "exports": {
+    ".": "./src/site.js",
+    "./markdown": "./src/markdown.js"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "build": "node bin/marklite.js build --src example/content --layouts example/layouts --out example/dist",
+    "serve": "node bin/marklite.js serve --src example/content --layouts example/layouts --out example/dist --port 4321"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "static-site-generator",
+    "markdown",
+    "zero-dependency",
+    "blog"
+  ],
+  "author": "Yiheng Hu",
+  "license": "MIT"
+}

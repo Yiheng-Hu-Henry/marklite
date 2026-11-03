@@ -1,0 +1,10 @@
+node_modules/
+example/dist/
+dist/
+.marklite-cache.json
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+coverage/
